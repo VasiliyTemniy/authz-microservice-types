@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "verbatimModuleSyntax": true,
+    "target": "ES2024",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": ".",
+    "outDir": "./dist",
+    "newLine": "LF",
+    "composite": true,
+    "baseUrl": "."
+  },
+  "exclude": [
+    "node_modules/*"
+  ],
+  "include": [
+    "."
+  ],
+  "ts-node": {
+    "esm": true
+  }
+}
