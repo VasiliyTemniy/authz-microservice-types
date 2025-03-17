@@ -25,3 +25,5 @@ export type MapToDtoN<T> = Expand<Omit<MapToDto<T>, 'id' | PropertiesTimestamps>
 export type MapToStrings<T> = {
   [K in keyof T]: string
 };
+
+export type UUID = string;
