@@ -8,8 +8,23 @@ import type { UUID } from "../../utils";
 export class Resource {
   constructor(
     readonly id: UUID,
+    readonly type: ResourceType,
+    readonly title?: string,
+    readonly createdAt?: Date,
+    readonly updatedAt?: Date,
+  ) {}
+}
+
+/**
+ * Resource type domain model
+ * 
+ * @memberof authz-microservice
+ */
+export class ResourceType {
+  constructor(
+    readonly id: UUID,
     readonly title: string,
-    readonly description: string,
+    readonly description?: string,
     readonly createdAt?: Date,
     readonly updatedAt?: Date,
   ) {}
