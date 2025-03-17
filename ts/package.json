@@ -1,0 +1,11 @@
+{
+  "name": "authz-microservice-types-ts",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "VasiliyTemniy",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.8.2"
+  }
+}
