@@ -1,7 +1,8 @@
 import type { UUID } from "../../utils";
 
 /**
- * Client domain model
+ * Client domain model\
+ * Represents api client that calls authz-microservice
  *
  * @memberof authz-microservice
  */
@@ -9,8 +10,8 @@ export class Client {
   constructor(
     readonly id: UUID,
     readonly title: string,
-    readonly description: string,
-    // Some api key handling must be implemented (?)
+    readonly secret: string,
+    readonly description?: string,
     readonly createdAt?: Date,
     readonly updatedAt?: Date
   ) {}

@@ -8,7 +8,8 @@ import type { GroupS } from "../Group";
 import type { Relation } from "../Relation";
 
 /**
- * Policy domain model
+ * Policy domain model\
+ * Represents decision base for access control
  * 
  * @memberof authz-microservice
  */
@@ -16,10 +17,10 @@ export class Policy {
   constructor(
     readonly id: UUID,
     readonly title: string,
-    readonly description: string,
     readonly scope: PolicyScope,
     readonly type: PolicyType,
     readonly data: PolicyData,
+    readonly description?: string,
     readonly createdAt?: Date,
     readonly updatedAt?: Date,
   ) {}

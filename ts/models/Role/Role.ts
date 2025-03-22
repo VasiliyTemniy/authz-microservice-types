@@ -9,7 +9,7 @@ export class Role {
   constructor(
     readonly id: UUID,
     readonly title: string,
-    readonly description: string,
+    readonly description?: string,
     readonly createdAt?: Date,
     readonly updatedAt?: Date,
   ) {}
