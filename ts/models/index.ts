@@ -1,4 +1,7 @@
 export * from './Attribute';
+export * from './Client';
+export * from './Coverage';
+export * from './Group';
 export * from './Permission';
 export * from './Policy';
 export * from './Relation';
