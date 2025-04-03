@@ -91,7 +91,7 @@ export class PolicyDataTime extends PolicyDataBase {
  * 
  * @memberof authz-microservice
  */
-export class PolicyDataClient extends PolicyDataBase {
+export class PolicyDataClientList extends PolicyDataBase {
   constructor(
     /** true: allow, false: deny */
     readonly direction: boolean,
@@ -106,7 +106,7 @@ export class PolicyDataClient extends PolicyDataBase {
  * 
  * @memberof authz-microservice
  */
-export class PolicyDataGroup extends PolicyDataBase {
+export class PolicyDataGroupList extends PolicyDataBase {
   constructor(
     /** true: allow, false: deny */
     readonly direction: boolean,
@@ -175,8 +175,8 @@ export type PolicyData =
   PolicyDataUserList |
   PolicyDataRoleList |
   PolicyDataTime |
-  PolicyDataClient |
-  PolicyDataGroup |
+  PolicyDataClientList |
+  PolicyDataGroupList |
   PolicyDataAttribute |
   PolicyDataRelation |
   PolicyDataAggregated;
